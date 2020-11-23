@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Lernzeit
 {
@@ -6,7 +7,11 @@ namespace Lernzeit
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<Zeiterfassung> zeiterfassungen = new List<Zeiterfassung>();
+
+            zeiterfassungen.Add(new Zeiterfassung(60, "Programmierung"));
+            zeiterfassungen.Add(new Zeiterfassung(123, "Mathematik"));
+            zeiterfassungen.Add(new Zeiterfassung(25, "Deutsch"));
         }
     }
 }
